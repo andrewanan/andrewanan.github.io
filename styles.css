@@ -70,3 +70,10 @@ body {
   #left-column{ width: 160px;}
   #right-column{ margin-left: 200px;}
 }
+
+#left-column{
+
+  flex: 0 0 240px;
+  max-width: 240px; 
+  top: 40px;
+}
