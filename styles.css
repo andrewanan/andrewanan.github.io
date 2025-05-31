@@ -22,7 +22,8 @@ a:visited {
 #main-body .name {
       color: #842cb0;
   
-      font-size: 48px;
+      font-size: clamp(32px, 6vw, 48px);
+      line-height: 1.1;
   }
 
 .name .first-name {
