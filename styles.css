@@ -7,8 +7,7 @@ body {
 }
 
 #main-body {
-    margin-top: 40px;
-    margin-bottom: 10px;
+    margin: 40px auto 10px;
 
 }
 
@@ -48,3 +47,10 @@ a:visited {
   #right-column p {
       margin-bottom: 25px;
   }
+
+  @media (min-width: 768px) {
+
+  #right-column {
+    padding-left: 2rem;
+  }
+}
