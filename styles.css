@@ -1,42 +1,54 @@
 body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    margin: 0;
-    background-color: #FFFFFF;
-    border-top: 2px solid #842cb0;
-
-}
-
-#main-body {
-    margin: 40px auto 10px;
-
-}
-
-a:link, a:visited, a:hover, a:active {
-    text-decoration: none;
-}
-a:visited, a:hover {
-    color: #842cb0;
-}
-
-#main-body .name {
+    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+      background-color: #FFFFFF;
+  
+      border-top: 2px solid #842cb0;
+  }
+  
+  
+  #main-body {
+      margin-top: 40px;
+      margin-bottom: 10px;
+  }
+  
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+      text-decoration: none;
+  }
+  
+  a:link,
+  a:visited {
+      color: #842cb0;
+  }
+  
+  a:hover {
+      color: #ad5ed5;
+  }
+  
+  a:active {
+      color: #62128a;
+  }
+  
+  #main-body .name {
       color: #842cb0;
   
-      font-size: clamp(32px, 6vw, 48px);
-      line-height: 1.1;
+      font-size: 48px;
   }
-
-.name .first-line {
+  
+  .name .first-name {
       font-weight: 500;
   }
   
-.name .last-line {
+  .name .last-name {
       font-weight: 300;
   }
-
-#right-column {
+  
+  #right-column {
       font-size: 14pt;
   
-      padding-left: 2rem;
+      padding-left: 20px;
       border-left: 2px solid #842cb0;
   
       padding-top: 10px;
@@ -44,6 +56,8 @@ a:visited, a:hover {
       color: #444;
       line-height: 200%;
   }
+  
   #right-column p {
       margin-bottom: 25px;
   }
+  
