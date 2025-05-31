@@ -1,4 +1,4 @@
-<h1 align="center">Github Site</h1>
+<h1 align="center">⚒ Github Site ⚒</h1>
 <p align="center">
   <i>My first github pages intro site.</i><br>
   </p>
