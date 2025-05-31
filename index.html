@@ -12,16 +12,37 @@
 </head>
 
 <body> 
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mb-4">
+    <div class="container">
+      <a class="navbar-brand" href="#">Andrew Anantharajah</a>
+
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navLinks">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navLinks">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#" data-section="home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-section="projects">Projects</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <section id="home-section">
     <div class="container">
         <div class="row" id="main-body">
-        <div class="col-3 col-md-2" id="left-column">
+        <div class="col-12 col-md-2" id="left-column">
             <div class="name">
                 <div class="first-line">Hi, I'm</div>
-                <div class="last-line">Andrew</div>
+                <div class="last-line">Andrew </div>
             </div>
         </div>
 
-        <div class="col-9 col-md-10" id="right-column">
+        <div class="col-12 col-md-10" id="right-column">
             <p>
                 I am a computer engineering graduate from <a href="https://www.stevens.edu/">Stevens Institute of Technology</a>. I recieved my Bachelors of Engineering in May 2025.
             </p>
@@ -33,6 +54,16 @@
         </div>
     </div>
     </div>
+    </section>
+
+    <section id="projects-section" class="d-none">
+    <div class="container">
+      <h2 class="mb-4">Projects</h2>
+      <div id="projects-grid" class="row g-4"></div>
+    </div>
+  </section>
+
+
 </body>
 
 
