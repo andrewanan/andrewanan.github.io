@@ -37,11 +37,11 @@ body {
       font-size: 48px;
   }
   
-  .name .first-name {
+  .name .first-line {
       font-weight: 500;
   }
   
-  .name .last-name {
+  .name .last-line {
       font-weight: 300;
   }
   
