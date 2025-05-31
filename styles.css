@@ -61,3 +61,12 @@ body {
       margin-bottom: 25px;
   }
   
+  #left-column{
+  position: sticky;
+  top: 40px;
+}
+
+@media (min-width: 768px){
+  #left-column{ width: 160px;}
+  #right-column{ margin-left: 200px;}
+}
