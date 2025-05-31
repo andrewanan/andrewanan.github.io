@@ -1,9 +1,15 @@
-# Andrew Anantharajah
+<h1 align="center">Github Site</h1>
+<p align="center">
+  <i>My first github pages intro site.</i><br>
+  </p>
 
-## About me
+---
 
-### I am a computer engineering graduate from Stevens Institute of Technology. I recieved my Bachelors of Engineering in May 2025.
+Basic HTML, JS, and CSS.
 
-### In the past, I have worked at the Port Authority of NYNJ, MEMX, Enica Engineering, and others. In my spare time I enjoy reading and learning new things.
+---
 
-#### Check out my **linkedin**, **resume** or visit my **Github**.
+To Do:
+- add interactive js
+- add links to footer
+- add nav bar for single page site
