@@ -36,7 +36,7 @@ a:visited {
 #right-column {
       font-size: 14pt;
   
-      padding-left: 20px;
+      padding-left: 2rem;;
       border-left: 2px solid #842cb0;
   
       padding-top: 10px;
@@ -47,10 +47,3 @@ a:visited {
   #right-column p {
       margin-bottom: 25px;
   }
-
-  @media (min-width: 768px) {
-
-  #right-column {
-    padding-left: 2rem;
-  }
-}
