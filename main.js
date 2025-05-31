@@ -6,7 +6,7 @@ const projects = [
   },
   {
     title: 'Using Social Media Sentiment to Predict Bitcoin Price',
-    desc : 'Tweet/Reddit VADER sentiment → SARIMAX & Ridge regression for BTC price.',
+    desc : 'Looking at the connection between Twitter and Reddit sentiment on Bitcoin pricing.',
     link : 'https://github.com/andrewanan/aai595-final-project'
   },
 
