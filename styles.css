@@ -11,3 +11,36 @@ body {
     margin-bottom: 10px;
 
 }
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.name .first-name {
+      font-weight: 500;
+  }
+  
+.name .last-name {
+      font-weight: 300;
+  }
+
+#right-column {
+      font-size: 14pt;
+  
+      padding-left: 20px;
+      border-left: 2px solid rgb(113, 155, 206);
+  
+      padding-top: 10px;
+  
+      color: #444;
+      line-height: 200%;
+  }
+  #right-column p {
+      margin-bottom: 25px;
+  }
