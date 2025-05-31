@@ -66,14 +66,16 @@ body {
   top: 40px;
 }
 
-@media (min-width: 768px){
-  #left-column{ width: 160px;}
-  #right-column{ margin-left: 200px;}
-}
 
 #left-column{
 
-  flex: 0 0 240px;
-  max-width: 240px; 
+  position: sticky;
   top: 40px;
+}
+
+@media (min-width: 768px) {
+  #left-column {
+    flex: 0 0 240px;
+    max-width: 240px;
+  }
 }
