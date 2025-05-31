@@ -15,12 +15,15 @@ body {
 a:link, a:visited, a:hover, a:active {
     text-decoration: none;
 }
-
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
+a:visited {
+    color: #842cb0;
 }
+
+#main-body .name {
+      color: #842cb0;
+  
+      font-size: 48px;
+  }
 
 .name .first-name {
       font-weight: 500;
@@ -34,7 +37,7 @@ a:link, a:visited, a:hover, a:active {
       font-size: 14pt;
   
       padding-left: 20px;
-      border-left: 2px solid rgb(113, 155, 206);
+      border-left: 2px solid #842cb0;
   
       padding-top: 10px;
   
