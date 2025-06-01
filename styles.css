@@ -1,8 +1,32 @@
+:root {
+    --bg: #FFFFFF;
+    --text: #444444;
+    --primary: #a033d7;
+    --primary-hover: #ad5ed5;
+    --primary-accent: #842cb0;
+}
+
+.dark-mode {
+    --bg: #121212;
+    --text: #E0E0E0;
+    --primary: #a234da;
+    --primary-hover: #d486fc;
+    --primary-accent: #842cb0;
+}
+
+.dark-mode .card,
+.dark-mode .navbar { background-color: #1e1e1e;}
+
+
+
+
+
+
 body {
     font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-      background-color: #FFFFFF;
-  
-      border-top: 2px solid #842cb0;
+      background-color: var(--bg);
+      color: var(--text);
+      border-top: 2px solid var(--primary-accent);
   }
   
   
@@ -12,27 +36,21 @@ body {
   }
   
   a:link,
-  a:visited,
-  a:hover,
-  a:active {
+  a:visited {
+      color: var(--primary);
       text-decoration: none;
   }
   
-  a:link,
-  a:visited {
-      color: #842cb0;
-  }
-  
   a:hover {
-      color: #ad5ed5;
+      color: var(--primary-hover)
   }
   
   a:active {
-      color: #62128a;
+      color: var(--primary-accent);
   }
   
   #main-body .name {
-      color: #842cb0;
+      color: var(--primary);
   
       font-size: 48px;
   }
@@ -49,11 +67,11 @@ body {
       font-size: 14pt;
   
       padding-left: 20px;
-      border-left: 2px solid #842cb0;
+      border-left: 2px solid var(--primary-accent);
   
       padding-top: 10px;
   
-      color: #444;
+      color: var(--text);
       line-height: 200%;
   }
   
@@ -74,6 +92,48 @@ body {
 }
 
 h2 {
-    color: #842cb0
+    color: var(--primary)
 }
 .card:hover { transform: translateY(-4px); transition: .2s; }
+
+.dark-mode .navbar {
+  background-color: #1f1f1f;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.dark-mode .card {
+  background-color: #202020;
+  border: 1px solid #2d2d2d;
+}
+
+.dark-mode .card-title,
+.dark-mode .card-text {
+  color: var(--text);
+}
+
+.dark-mode .btn-outline-primary {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.dark-mode .btn-outline-primary:hover {
+  color: #ffffff;
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+
+
+.navbar { transition: background-color .25s ease; }
+
+.dark-mode .navbar {
+  background-color:#1f1f1f !important;
+  border-bottom:1px solid #2a2a2a;
+}
+
+
+body, .navbar, .card, #right-column, #left-column .name,
+a, h1, h2, h3, p {
+  transition: background-color .25s ease, color .25s ease, border-color .25s ease;
+}
+
