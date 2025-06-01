@@ -94,6 +94,10 @@ body {
 h2 {
     color: var(--primary)
 }
+h3 {
+    color: var(--primary-accent);
+    font-size: 18px;
+}
 .card:hover { transform: translateY(-4px); transition: .2s; }
 
 .dark-mode .navbar {
