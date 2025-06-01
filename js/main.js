@@ -45,11 +45,13 @@ function renderProjects() {
 
 
 function showSection(id) {
-  const home    = document.getElementById('home-section');
+  const home = document.getElementById('home-section');
   const project = document.getElementById('projects-section');
+  const new_home = document.getElementById('new-home-section');
 
   home.classList.toggle('d-none', id !== 'home');
   project.classList.toggle('d-none', id !== 'projects');
+  new_home.classList.toggle('d-none', id !== 'new-home');
 
 
   document.querySelectorAll('a[data-section]').forEach(a =>
@@ -59,10 +61,7 @@ function showSection(id) {
 document.addEventListener('DOMContentLoaded', () => {
   renderProjects();
   showSection('home');  
-  const stored = localStorage.getItem('prefers-dark') === 'true';
-  applyTheme(stored);
 
-  document.getElementById('themeSwitch').addEventListener('change', e => applyTheme(e.target.checked));
   document.querySelector('nav').addEventListener('click', e => {
     if (e.target.matches('a[data-section]')) {
       e.preventDefault();
@@ -72,11 +71,4 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-function applyTheme(isDark){
-    document.body.classList.toggle('dark-mode', isDark);
-    localStorage.setItem('prefers-dark', isDark);
-    const toggle = document.getElementById('themeSwitch');
-    if (toggle) {
-        toggle.checked = isDark;
-    }
-}
+
