@@ -13,7 +13,7 @@ const projects = [
     title: 'Using Social Media Sentiment to Predict Bitcoin Price',
     desc : 'Looking at the connection between Twitter and Reddit sentiment on Bitcoin pricing.',
     link : 'https://github.com/andrewanan/aai595-final-project',
-    img : 'https://private-user-images.githubusercontent.com/108149009/443971509-c0e150bb-a25c-4fac-97ff-0acc47a8a36f.svg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDg4OTY1ODgsIm5iZiI6MTc0ODg5NjI4OCwicGF0aCI6Ii8xMDgxNDkwMDkvNDQzOTcxNTA5LWMwZTE1MGJiLWEyNWMtNGZhYy05N2ZmLTBhY2M0N2E4YTM2Zi5zdmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNjAyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDYwMlQyMDMxMjhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zMTQ4ZDI0MDEwYzQwZjQyOTg4NjQ1MmRiZGZhYjMzODQzZTAwNzhhZWY5NWQ2OGVhMWY1ZjY5NzIyODVhNjdmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.6F-bOXgbeiJv7ahOxDseUdko8dg46tBkPUkbzPReRAc'
+    img : './imgs/AAI595-Poster.png'
   },
 
   {
