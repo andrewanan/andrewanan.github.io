@@ -13,7 +13,7 @@ const projects = [
     title: 'Using Social Media Sentiment to Predict Bitcoin Price',
     desc : 'Looking at the connection between Twitter and Reddit sentiment on Bitcoin pricing.',
     link : 'https://github.com/andrewanan/aai595-final-project',
-    img : './imgs/AAI595-Poster.png'
+    img : '../imgs/AAI595-Poster.png'
   },
 
   {
