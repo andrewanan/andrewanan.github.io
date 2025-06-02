@@ -100,9 +100,15 @@ h3 {
 }
 .card:hover { transform: translateY(-4px); transition: .2s; }
 
-.dark-mode .navbar {
-  background-color: #1f1f1f;
-  border-bottom: 1px solid #2a2a2a;
+.btn-outline-primary {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-outline-primary:hover{
+  color: #ffffff;
+  background-color: var(--primary);
+  border-color: var(--primary);
 }
 
 .dark-mode .card {
@@ -132,11 +138,29 @@ h3 {
 .dark-mode .navbar {
   background-color:#1f1f1f !important;
   border-bottom:1px solid #2a2a2a;
+  color: var(--text);
 }
 
 
 body, .navbar, .card, #right-column, #left-column .name,
 a, h1, h2, h3, p {
   transition: background-color .25s ease, color .25s ease, border-color .25s ease;
+}
+
+.navbar .navbar-brand {
+  color: var(--primary);
+}
+.navbar .navbar-brand:hover {
+  color: var(--primary-hover);
+}
+
+.navbar .nav-link {
+  color: var(--primary);
+}
+.navbar .nav-link:hover {
+  color: var(--primary-hover);
+}
+.navbar .nav-link.active {
+  color: var(--primary-hover);
 }
 
