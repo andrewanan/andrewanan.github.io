@@ -110,7 +110,9 @@ h3 {
   border: 1px solid #2d2d2d;
 }
 
-.dark-mode .card-title,
+.dark-mode .card-title {
+  color: var(--primary-hover);
+}
 .dark-mode .card-text {
   color: var(--text);
 }
@@ -126,9 +128,6 @@ h3 {
   border-color: var(--primary);
 }
 
-
-
-.navbar { transition: background-color .25s ease; }
 
 .dark-mode .navbar {
   background-color:#1f1f1f !important;
