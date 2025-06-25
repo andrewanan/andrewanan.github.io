@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const stored = localStorage.getItem('prefers-dark') === 'true';
   applyTheme(stored);
 
-  document.getElementById('themeSwitch')
-          .addEventListener('change', e => applyTheme(e.target.checked));
+  const toggle = document.getElementById('themeSwitch');
+  if (toggle) {
+    toggle.addEventListener('change', e => applyTheme(e.target.checked));
+  }
 });
