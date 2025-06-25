@@ -71,10 +71,13 @@ function showSection(id) {
   const home = document.getElementById('home-section');
   const project = document.getElementById('projects-section');
   const new_home = document.getElementById('new-home-section');
+  const writing = document.getElementById('writing-section');
+
 
   home.classList.toggle('d-none', id !== 'home');
   project.classList.toggle('d-none', id !== 'projects');
   new_home.classList.toggle('d-none', id !== 'new-home');
+  writing.classList.toggle('d-none', id !== 'writing');
 
 
   document.querySelectorAll('a[data-section]').forEach(a =>
