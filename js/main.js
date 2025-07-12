@@ -34,7 +34,13 @@ const projects = [
     desc : "A Python script that automates the retrieval and processing of daily traffic reports from the Port Authority of New York and New Jersey's internal SQL database.",
     link : 'https://github.com/andrewanan/PANYNJ_project',
     img: ''
-}
+},
+  {
+    title: 'Digital Clock on Nexsys A7-100T FPGA',
+    desc : 'A digital clock implemented on a Nexsys A7-100T FPGA using Verilog.',
+    link : 'https://github.com/cfoote5/CPE487_FinalProject',
+    img: ''
+  }
 ];
 
 function defaultOpenGraph(repoUrl) {
