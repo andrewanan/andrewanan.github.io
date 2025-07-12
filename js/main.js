@@ -37,10 +37,11 @@ const projects = [
 },
   {
     title: 'Digital Clock on Nexsys A7-100T FPGA',
-    desc : 'A digital clock implemented on a Nexsys A7-100T FPGA using Verilog.',
+    desc : 'A digital clock that features an alarm setting using VHDL.',
     link : 'https://github.com/cfoote5/CPE487_FinalProject',
     img: ''
   }
+
 ];
 
 function defaultOpenGraph(repoUrl) {
