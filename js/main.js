@@ -103,7 +103,7 @@ function renderHighlightedProjects() {
     col.className = 'col-sm-6 col-lg-4';
     const imgSrc = p.img || defaultOpenGraph(p.link);
     col.innerHTML = `
-      <div class="card h-100 shadow-sm border-primary-subtle">
+      <div class="card h-100 shadow-sm">
         ${imgSrc ? `<img src="${imgSrc}" class="card-img-top" alt="Preview of ${p.title}">` : ''}
         <div class="card-body d-flex flex-column">
           <h5 class="card-title">${p.title}</h5>
