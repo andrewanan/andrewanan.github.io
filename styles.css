@@ -75,12 +75,12 @@ body {
       line-height: 200%;
   }
   
-  #right-column p {
+#right-column p {
       margin-bottom: 25px;
   }
   
-  #left-column{
-  position: sticky;
+#left-column{
+  position: static;
   top: 40px;
 }
 
@@ -88,7 +88,8 @@ body {
 @media (min-width: 768px) {
   #left-column {
     position: sticky;
-    top: 40px; }
+    top: 40px;
+    align-self: flex-start}
 }
 
 h2 {
