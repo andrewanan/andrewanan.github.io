@@ -85,6 +85,15 @@ function showSection(id) {
   project.classList.toggle('d-none', id !== 'projects');
   new_home.classList.toggle('d-none', id !== 'new-home');
 
+if (id === 'new-home') {
+  if (!window.__boidsStarted) {
+    window.initBoids();
+    window.__boidsStarted = true;
+  } else {
+    window.boidsRespawn();           // optional refresh
+    window.dispatchEvent(new Event('resize'));
+  }
+}
 
 
   document.querySelectorAll('a[data-section]').forEach(a =>
@@ -103,4 +112,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+
 
