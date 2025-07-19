@@ -44,6 +44,28 @@ const projects = [
 
 ];
 
+const projectsHighlight = [
+{
+    title: 'SQL Phi Interpreter',
+    desc : 'A mini ad-hoc OLAP query-processing engine that reads an MF query description, autogenerates Python code, queries a PostgreSQL sales table, and prints the result.',
+    link : 'https://github.com/kmill89/cs562-project-demo',
+    img: ''
+  },
+
+{
+    title: 'SATC 2024 Submission',
+    desc : 'Trading Algorithm for the 2024 Stevens Algorithmic Trading Competition.',
+    link : 'https://github.com/andrewanan/ol_college_try_SATC_S2024'
+  },
+
+  {
+    title: 'Digital Clock on Nexsys A7-100T FPGA',
+    desc : 'A digital clock that features an alarm setting using VHDL.',
+    link : 'https://github.com/cfoote5/CPE487_FinalProject',
+    img: ''
+  }
+]
+
 function defaultOpenGraph(repoUrl) {
   const [, owner, repo] = repoUrl.match(/github\.com\/([^/]+)\/([^/]+)/) || [];
   return owner && repo
@@ -72,6 +94,27 @@ function renderProjects() {
     grid.appendChild(col);
   });
 }
+
+function renderHighlightedProjects() {
+  const grid = document.getElementById('highlighted-projects-grid');
+  if (!grid) return;
+  projectsHighlight.forEach(p => {
+    const col = document.createElement('div');
+    col.className = 'col-sm-6 col-lg-4';
+    const imgSrc = p.img || defaultOpenGraph(p.link);
+    col.innerHTML = `
+      <div class="card h-100 shadow-sm border-primary-subtle">
+        ${imgSrc ? `<img src="${imgSrc}" class="card-img-top" alt="Preview of ${p.title}">` : ''}
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">${p.title}</h5>
+          <p class="card-text flex-grow-1">${p.desc}</p>
+          <a href="${p.link}" target="_blank" class="btn btn-outline-primary mt-2">View on GitHub</a>
+        </div>
+      </div>`;
+    grid.appendChild(col);
+  });
+}
+
 
 
 function showSection(id) {
@@ -102,6 +145,7 @@ if (id === 'new-home') {
 
 document.addEventListener('DOMContentLoaded', () => {
   renderProjects();
+  renderHighlightedProjects();
   showSection('home');  
 
   document.querySelector('nav').addEventListener('click', e => {
